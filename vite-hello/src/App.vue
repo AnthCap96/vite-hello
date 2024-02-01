@@ -7,7 +7,7 @@ export default {
 data() {
   return {
     message: "Anthony",
-    image: "",
+    image: "https://www.greenme.it/wp-content/uploads/2020/08/curioso-come-george.jpg",
   }
  },
  methods: {
@@ -17,8 +17,10 @@ data() {
 </script>
 
 <template>
+
   <h1>Ciao {{ message }}</h1>
-  <img src="https://www.greenme.it/wp-content/uploads/2020/08/curioso-come-george.jpg">
+  <img :src="image">
+
 </template>
 
 <style>
